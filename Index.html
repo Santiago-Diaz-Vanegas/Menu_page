@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menú del Restaurante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <h2>Sabores <span class="amarillo">del</span> Magdal<span class="amarillo">ena</span></h2>
+                </div>
+                <nav class="navegacion ocultar"> <a href="#inicio">Inicio</a> <a href="#sobre-nosotros">Sobre
+                        Nosotros</a> <a href="#menu">Menú</a> <a href="#chef">Chef</a> <a href="#contacto">Contacto</a>
+                </nav>
+                <div class="hamburguesa"> <span></span><span></span><span></span> </div>
+            </div>
+        </div>
+        <div class="contenido-header">
+            <div class="contenedor-encabezado" id="inicio">
+                <div class="texto-encabezado">
+                    <h2>¡Bienvenido!</h2> <a href="#menu" class="btn bordes">nuestro menú</a>
+                </div> <video autoplay loop muted>
+                    <source src="assets/bg_video.mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+    <div class="contenedor-nosotros contenedor" id="sobre-nosotros">
+        <div class="texto-nosotros">
+            <p class="bienvenida">Bienvenidos a!</p>
+            <h1>Sabores del Magdalena</h1>
+            <p>Un rincón culinario en el corazón de Barrancabermeja, donde la tradición y la innovación se unen para
+                celebrar la rica herencia gastronómica del río Magdalena. Nuestro restaurante se especializa en
+                platillos de río, ofreciendo una experiencia única que resalta los sabores auténticos de la región.
+                Fundado con la pasión por la cocina local, Sabores del Magdalena es el lugar ideal para disfrutar de una
+                cocina que honra nuestras raíces y ofrece un viaje gastronómico memorable. Nos enorgullece utilizar
+                ingredientes frescos y de origen local, garantizando que cada plato no solo deleite el paladar, sino que
+                también apoye a las comunidades pesqueras locales. </p> <a href="#contacto"
+                class="btn btn-rojo">contactar</a>
+        </div>
+        <div class="imagenes-nosotros">
+            <div class="imagen1"> <img data-src="assets/img/nosotros1.webp" alt="mujer comiendo"> </div>
+            <div class="imagenes2"> <img data-src="assets/img/nosotros2.webp" alt="mujeres comiendo"> <img
+                    data-src="assets/img/nosotros3.webp" alt="plato con frutas y verdurtas"> </div>
+        </div>
+    </div>
+    <div class="menu-container" id="menu">
+        <h2 class="texto-platillos">Menú del Restaurante</h2>
+        <div class="filters"> <button data-category="Todos">Todos</button> <button
+                data-category="Entrada">Entrada</button> <button data-category="Ensalada">Ensalada</button> <button
+                data-category="Cazuela">Cazuela</button> <button data-category="Cazuelitas">Cazuelitas</button> <button
+                data-category="Pescado">Pescado</button> <button data-category="Mariscos">Mariscos</button> <button
+                data-category="Filetes ">Filetes</button> <button data-category="Carne y Avez">Carne y Avez</button>
+            <button data-category="Pasta">Pasta</button> <button data-category="Arroz">Arroz</button> <button
+                data-category="Bebidas">Bebidas</button> <button data-category="Cervezas ">Cervezas</button> <button
+                data-category="Postres">Postres</button>
+        </div>
+        <div class="menu-items" id="menu-items"></div>
+    </div>
+    <div class="separador">
+        <div class="contenido-separador contenedor">
+            <h2>Tu Casa, Tu Mesa, Tu Sabor</h2>
+            <p>En nuestro restaurante, cada plato está lleno de amor y tradición. Nos esforzamos por traer a tu mesa los
+                sabores que evocan recuerdos de hogar, esos aromas y gustos que te hacen sentir cómodo y feliz. Aquí,
+                cada bocado te transporta a momentos especiales compartidos con la familia y amigos. Disfruta de una
+                experiencia culinaria única, donde la calidez de nuestra cocina te hará sentir como en casa.</p> <a
+                href="#menu" class="btn btn-verde">Nuestro Menu</a>
+        </div>
+    </div>
+    <section class="chef contenedor" id="chef">
+        <h2>Chef Maria Ramírez</h2>
+        <div class="contenido-chef">
+            <div class="texto-chef">
+                <h3> Con más de 10 años de experiencia en la cocina, la Chef Maria es una verdadera experta en platillos
+                    de río. </h3>
+                <p>Originaria de Barrancabermeja, ha dedicado su carrera a perfeccionar recetas tradicionales del
+                    Magdalena, transformándolas en obras maestras culinarias. Su pasión por los ingredientes locales y
+                    su habilidad para realzar los sabores del pescado fresco hacen de cada plato una experiencia
+                    inolvidable.</p> <a href="#menu" class="btn btn-verde">Nuestro Menu</a>
+            </div>
+            <div class="imagen-chef"> <img data-src="/assets/img/Chef.webp" alt="Foto del chef"> </div>
+        </div>
+    </section>
+    <div class="formulario-contacto contenedor" id="contacto">
+        <div class="informacion-contacto">
+            <h3>Contactanos</h3>
+            <p><i class="fa-solid fa-location-dot"></i>Cra. 1 #501</p>
+            <p><i class="fa-solid fa-envelope"></i>Menu@smagdalena.com</p>
+            <p><i class="fa-solid fa-phone"></i>+57 3001233212</p>
+            <div class="redes-sociales"> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i
+                    class="fa-brands fa-twitter"></i> </div>
+        </div>
+        <form class="formulario">
+            <div class="input-formulario"> <label for="nombre">Nombre</label> <input type="text" placeholder="Lucia"
+                    id="nombre"> </div>
+            <div class="input-formulario"> <label for="apellidos">Apellidos</label> <input type="text"
+                    placeholder="Gonzales" id="apellidos"> </div>
+            <div class="input-formulario"> <label for="correo">Correo</label> <input type="email"
+                    placeholder="Example@example.com" id="correo"> </div>
+            <div class="input-formulario"> <label for="telefono">Telefono</label> <input type="tel"
+                    placeholder="+57 987 543 1234" id="telefono"> </div>
+            <div class="input-formulario"> <label for="mensaje">Mensaje</label> <textarea id="mensaje"></textarea>
+            </div>
+            <div class="btn-formulario"> <input type="submit" class="btn btn-verde" value="Enviar"> </div>
+        </form>
+    </div>
+    <div class="pie-pagina">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>Barrancabermeja/Santander</p>
+            </div>
+            <div class="info">
+                <h3>Dias de Descuento</h3>
+                <p>Sabados y Domingos 11am - 9pm</p>
+                <p>+57 3001233212</p>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Sabados - Domingos 8am - 9pm</p>
+                <div class="redes-sociales redes-pie">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Suscribete</h3>
+                <p>¡Suscríbete para no perderte ninguna novedad!</p>
+                <input type="email" placeholder="Tu Correo">
+                <input type="submit" class="btn btn-verde" value="Suscribirse">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; 2024 Sabores del Magdalena, Desarrollado por Santiago</p>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
